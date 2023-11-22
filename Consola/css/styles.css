@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+}
+
+#main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffb703 ;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 2fr 5fr 2fr;
+}
+
+#main-console{
+    grid-column: 2 / 3 ;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+#blue-cntrll {
+    grid-column: 1 / 2 ;
+    background-color: #01BAE2;
+    border-radius: 100px 10px 10px 100px;
+    box-shadow: 10px 10px 30px 10px #028aa89a inset; 
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 3fr 2fr;
+}
+
+#btn-superior{
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+#btn1{
+    width: 2vw;
+    height: 1vh;
+    background-color: #212529;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#joystick{
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-joy , #btn-joy-r{
+    width: 5vw;
+    height: 10vh;
+    background-color: #17191c;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-joy-inside-l, #bnt-joy-inside-r{
+    width: 90%;
+    height: 90%;
+    background-color: #212529;
+    border-radius: 100px;
+}
+
+#botones-cruz {
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#up {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+
+#left{
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+#down{
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+}
+
+#right{
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
+}
+
+#btn-up, #btn-left, #btn-down, #btn-right{
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    text-decoration: none;
+    background-color: #212529;
+    border-radius: 50%; 
+    border: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 3px 3px #17191c inset; 
+
+}
+
+#btn-inferior{
+    grid-row: 4 / 5;
+}
+
+#btn-cuadrado{
+    width: 15%;
+    height: 25%;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212529;
+}
+
+#inferior-circulo-inside{
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    background-color: #111415;
+
+}
+
+#screen {
+    grid-column: 2 / 3;
+    background-color: #212529 ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-screen{
+    width: 95%;
+    height: 90%;
+    border-radius: 10px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-screen{
+    width: 85%;
+    height: 85%;
+    border-radius: 5px;
+    background-image: url('../img/img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#red-cntrll{
+    grid-column: 3 / 4;
+    background-color: #FA5D4E;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 2fr 2fr;
+    box-shadow: 10px 10px 30px 10px #a73e3477 inset; 
+
+    border-radius: 10px 100px 100px 10px;
+}
+
+#btn-cruz-superior{
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+}
+
+#btn-ayxb {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#x {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+
+#a {
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
+}
+
+#b {
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+}
+
+#y {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+#btn-x, #btn-a, #btn-b, #btn-y{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: #212529;
+    border-radius: 50%; 
+    border: none;
+    box-shadow: 3px 3px 3px 3px #17191c inset; 
+
+}
+
+#joystick-right{
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-home{
+    grid-row: 4 / 5;
+}
+
+#home{
+    width: 20%;
+    height: 30%;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 100px;
+    background-color: #16181c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-inside{
+    border-radius: 100px;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212529;
+}
+
+button{
+    color: white;
+    font-size: large;
+}
+
+
